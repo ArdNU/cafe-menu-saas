@@ -118,7 +118,7 @@ function Dashboard() {
             <div className="card-content">
               <div style={{ fontSize: '0.8rem', color: '#94a3b8', textTransform: 'uppercase', marginBottom: '0.3rem' }}>{item.category}</div>
               <div className="card-title">{item.name}</div>
-              <div className="card-price">${item.price}</div>
+              <div className="card-price">{item.price} ₸</div>
               <div className="card-desc">{item.description}</div>
               <div className="card-actions">
                 <button className="btn btn-secondary" onClick={() => handleEdit(item)}>Edit</button>

@@ -55,7 +55,7 @@ function PublicMenu() {
                 )}
                 <div className="card-content">
                   <div className="card-title">{item.name}</div>
-                  <div className="card-price">${item.price}</div>
+                  <div className="card-price">{item.price} ₸</div>
                   <div className="card-desc">{item.description}</div>
                 </div>
               </div>
