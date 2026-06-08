@@ -1,9 +1,9 @@
 [build]
-builder = "docker"
+builder = "DOCKERFILE"
 dockerfilePath = "Dockerfile"
 
 [deploy]
-restartPolicyType = "on-failure"
+restartPolicyType = "ON_FAILURE"
 healthcheckPath = "/"
 
 [env]
