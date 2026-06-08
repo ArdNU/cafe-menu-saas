@@ -37,6 +37,11 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
+// --- HEALTH CHECK ---
+app.get('/health', (req, res) => {
+    res.status(200).json({ status: 'ok' });
+});
+
 // --- AUTHENTICATION ROUTES ---
 
 app.post('/api/register', async (req, res) => {
