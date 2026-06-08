@@ -1,0 +1,13 @@
+[build]
+builder = "docker"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+restartPolicyType = "on-failure"
+healthcheckPath = "/"
+
+[env]
+PORT = "5000"
+NODE_ENV = "production"
+JWT_SECRET = "super_secret_production_key_cafe_123"
+DATA_DIR = "/app/data"
